@@ -1,13 +1,260 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 	<meta charset="UTF-8">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Toukaitetudouのホームページ</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Toukaitetudou</title>
+
+	<!-- 全ページ共通CSS -->
+	<link rel="stylesheet" href="css/common.css">
+
+	<!-- トップページ専用CSS -->
+	<link rel="stylesheet" href="css/top.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-	
-	<h2>お知らせ</h2>
+
+	<!-- =========================================================
+         ヘッダー
+         共通部分
+         ========================================================= -->
+
+	<header class="site-header">
+	</header>
+
+
+	<!-- =========================================================
+         メイン
+         トップページ専用
+         ========================================================= -->
+
+	<main>
+
+
+		<section class="hero">
+
+			<div class="hero-inner">
+
+				<div class="hero-text">
+
+					<img src="/Images/banner.png">
+				<br>
+
+					<a href="products.html" class="primary-button">
+						制作物一覧
+					</a>
+
+				</div>
+				<div class="hero-text">
+					<p>好きなことを好きなだけやる Toukaitetudouです. プログラムを書いたり技術系同人誌を書いたりしています.</p>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- =====================================================
+             お知らせ
+             トップページ専用
+             ===================================================== -->
+
+		<section class="home-section">
+
+			<div class="section-heading">
+
+				<div>
+					<div class="section-label">
+						NEWS
+					</div>
+
+					<h2>
+						お知らせ
+					</h2>
+				</div>
+
+				<a href="news.html" class="text-link">
+					一覧を見る
+				</a>
+
+			</div>
+
+
+			<div class="news-list">
+
+				<a href="#" class="news-item">
+
+					<time datetime="2026-09-17">
+						2026.09.17
+					</time>
+
+					<span class="news-category">
+						EVENT
+					</span>
+
+					<span class="news-title">
+						次回イベントへの参加について
+					</span>
+
+				</a>
+
+
+				<a href="#" class="news-item">
+
+					<time datetime="2026-09-17">
+						2026.09.17
+					</time>
+
+					<span class="news-category">
+						INFO
+					</span>
+
+					<span class="news-title">
+						ホームページを公開しました
+					</span>
+
+				</a>
+
+			</div>
+
+		</section>
+
+
+		<!-- =====================================================
+             新刊
+             トップページ専用
+             ===================================================== -->
+
+		<section class="home-section">
+
+			<div class="section-heading">
+
+				<div>
+					<div class="section-label">
+						NEW WORK
+					</div>
+
+					<h2>
+						新刊
+					</h2>
+				</div>
+
+				<a href="products.html" class="text-link">
+					作品一覧
+				</a>
+
+			</div>
+
+
+			<article class="featured-work">
+				<h3>Comming Soon</h3>
+			</article>
+
+		</section>
+
+
+		<!-- =====================================================
+             イベント
+             ===================================================== -->
+
+		<section class="home-section">
+
+			<div class="section-heading">
+
+				<div>
+					<div class="section-label">
+						EVENT
+					</div>
+
+					<h2>
+						イベント参加予定
+					</h2>
+				</div>
+
+				<a href="event.html" class="text-link">
+					詳細を見る
+				</a>
+
+			</div>
+
+
+			<div class="event-card">
+
+				<div class="event-date">
+					<span>2026</span>
+					<strong>11.07 11.08</strong>
+				</div>
+
+				<div class="event-content">
+
+					<div class="event-category">
+						文化祭
+					</div>
+
+					<h3>
+						沼津高専高専祭
+					</h3>
+
+					<p>
+						スペース：専攻科棟102教室
+					</p>
+
+				</div>
+
+				<a href="event.html" class="secondary-button">
+					イベント詳細
+				</a>
+
+			</div>
+
+		</section>
+
+
+		<!-- =====================================================
+             フッター前の案内
+             ===================================================== -->
+
+		<section class="contact-banner">
+
+			<div>
+
+				<div class="section-label">
+					CONTACT
+				</div>
+
+				<h2>
+					お問い合わせ
+				</h2>
+
+				<p>
+					サークルや作品についてのお問い合わせはこちらから。
+				</p>
+
+			</div>
+
+			<a href="contact.html" class="primary-button">
+				お問い合わせ
+			</a>
+
+		</section>
+
+	</main>
+
+
+	<!-- =========================================================
+         フッター
+         共通部分
+         ========================================================= -->
+
+	<footer class="site-footer">
+	</footer>
+
+
+	<script type="text/javascript" src="js/common.js"></script>
 </body>
+
 </html>
