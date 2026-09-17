@@ -10,7 +10,7 @@ async function loadText(path) {
 function addHeader() {
 	let targets = document.getElementsByClassName("site-header");
 	let element = document.createElement("p");
-	loadText("/website/Components/header.html").then(result => {
+	loadText("/Components/header.html").then(result => {
 		element.innerHTML = result;
 		for (let i = 0; i < targets.length; ++i) {
 			targets[i].appendChild(element);
@@ -20,7 +20,7 @@ function addHeader() {
 function addFooter() {
 	let targets = document.getElementsByClassName("site-footer");
 	let element = document.createElement("p");
-	loadText("/website/Components/footer.html").then(result => {
+	loadText("/Components/footer.html").then(result => {
 		element.innerHTML = result;
 		for (let i = 0; i < targets.length; ++i) {
 			targets[i].appendChild(element);
@@ -34,7 +34,7 @@ function alterNoImage() {
 		targetImage.onerror = () => {
 			console.log("onerror called");
 			targetImage.onerror = null;
-			loadText("/website/Components/AlterImage.html").then(result =>
+			loadText("/Components/AlterImage.html").then(result =>
 				targetImage.outerHTML = result
 			);
 		}
