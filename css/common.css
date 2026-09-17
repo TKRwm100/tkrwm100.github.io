@@ -41,6 +41,20 @@ a {
 	text-decoration: none;
 }
 
+.content-width {
+    width: min(1100px, calc(100% - 40px));
+    margin-inline: auto;
+}
+
+.noimage-text{
+	aspect-ratio: 1/1;
+	background-color: var(--blue);
+	display: flex;
+	padding: 10%;
+	justify-self: center;
+	align-items: center;
+	text-align: center;
+}
 
 /* =============================================================
    ヘッダー

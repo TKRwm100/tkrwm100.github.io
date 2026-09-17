@@ -1,0 +1,518 @@
+main {
+	margin: 0 10% 10% 10%;
+}
+/* =========================================
+   ページヘッダー
+   ========================================= */
+
+.event-header {
+    padding: 80px 0 70px;
+
+    border-bottom: 1px solid var(--color-light-purple);
+}
+
+.event-header h1 {
+    margin: 0;
+
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+}
+
+.event-header p:last-child {
+    margin: 25px 0 0;
+
+    max-width: 600px;
+
+    font-size: 0.95rem;
+}
+
+.event-section {
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 65px 24px 0;
+}
+
+.section-heading {
+    padding-bottom: 18px;
+
+    border-bottom: 2px solid var(--light);
+
+
+    gap: 20px;
+}
+/* =========================================
+   セクション
+   ========================================= */
+
+.next-event,
+.upcoming-events,
+.past-events {
+    padding: 90px 0;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    font-size: 1.7rem;
+}
+
+
+/* =========================================
+   次回イベント
+   ========================================= */
+
+.next-event-card {
+    display: grid;
+
+    grid-template-columns: 260px 1fr;
+
+    border: 1px solid var(--color-black);
+}
+
+
+/*
+ * 日付を大きく見せる領域
+ *
+ * #84A2D4
+ * 「イベント」という活動そのものを
+ * 視覚的に強調するために使用
+ */
+.next-event-visual {
+    min-height: 350px;
+
+    padding: 40px;
+
+    background: var(--color-blue);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.visual-month {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.visual-day {
+    margin: 10px 0;
+
+    font-size: 6rem;
+    line-height: 0.9;
+}
+
+.visual-week {
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+}
+
+
+/* =========================================
+   次回イベント本文
+   ========================================= */
+
+.next-event-content {
+    padding: 45px 50px;
+}
+
+.event-status {
+    display: inline-block;
+
+    padding: 4px 12px;
+
+    background: var(--color-light-purple);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.next-event-content h3 {
+    margin: 18px 0 5px;
+
+    font-size: 1.8rem;
+}
+
+.event-place {
+    margin: 0;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.event-description {
+    max-width: 650px;
+
+    margin: 25px 0 30px;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   イベント詳細情報
+   ========================================= */
+
+.event-details {
+    display: flex;
+
+    margin-bottom: 30px;
+
+    border-top: 1px solid var(--color-light-purple);
+    border-bottom: 1px solid var(--color-light-purple);
+}
+
+.event-details div {
+    min-width: 180px;
+
+    padding: 13px 20px;
+
+    border-right: 1px solid var(--color-light-purple);
+}
+
+.event-details div:first-child {
+    padding-left: 0;
+}
+
+.event-details div:last-child {
+    border-right: none;
+}
+
+.event-details span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: var(--color-purple);
+
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.event-details strong {
+    font-size: 0.85rem;
+}
+
+
+/* =========================================
+   今後のイベント
+   ========================================= */
+
+.event-grid {
+    gap: 25px;
+}
+
+
+/*
+ * イベントカード
+ */
+.event-card {
+    display: grid;
+
+    grid-template-columns: 110px 1fr;
+
+    border: 1px solid var(--color-light-purple);
+}
+
+
+/*
+ * 日付部分
+ */
+.event-card-date {
+    padding: 25px 15px;
+
+    background: var(--color-light-purple);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.event-card-date span {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.event-card-date strong {
+    margin: 5px 0;
+
+    font-size: 2.8rem;
+    line-height: 1;
+}
+
+.event-card-date small {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+}
+
+.event-card-image{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.event-card-image img{
+	width: 85px;
+	height: 85px;
+}
+
+
+/* =========================================
+   イベントカード本文
+   ========================================= */
+
+.event-card-body {
+    padding: 25px 28px;
+}
+
+.event-card-place {
+    margin: 0;
+
+    color: var(--color-purple);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.event-card h3 {
+    margin: 8px 0;
+
+    font-size: 1.1rem;
+}
+
+.event-card-body > p:not(.event-card-place) {
+    margin: 0 0 20px;
+
+    font-size: 0.8rem;
+}
+
+
+/* イベント情報 */
+.event-card dl {
+    margin: 0 0 20px;
+
+    border-top: 1px solid var(--color-light-purple);
+}
+
+.event-card dl div {
+    display: flex;
+
+    padding: 8px 0;
+
+    border-bottom: 1px solid var(--color-light-purple);
+}
+
+.event-card dt {
+    width: 70px;
+
+    color: var(--color-purple);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.event-card dd {
+    margin: 0;
+
+    font-size: 0.75rem;
+}
+
+
+/* =========================================
+   過去イベント
+   ========================================= */
+
+.past-events {
+    padding-top: 0;
+}
+
+.past-event-list {
+    border-top: 1px solid var(--color-black);
+}
+
+.past-event {
+    display: grid;
+
+    grid-template-columns: 150px 1fr 30px;
+
+    align-items: center;
+
+    min-height: 75px;
+
+    padding: 12px 15px;
+
+    border-bottom: 1px solid var(--color-light-purple);
+
+    color: var(--color-black);
+    text-decoration: none;
+
+    transition: background-color 0.2s ease;
+}
+
+.past-event:hover {
+    background: var(--color-light-purple);
+}
+
+.past-event time {
+    font-size: 0.8rem;
+}
+
+.past-event-name {
+    display: flex;
+    align-items: baseline;
+
+    gap: 20px;
+}
+
+.past-event-name strong {
+    font-size: 0.9rem;
+}
+
+.past-event-name span {
+    font-size: 0.75rem;
+}
+
+.past-event-arrow {
+    color: var(--color-purple);
+
+    font-size: 1.2rem;
+}
+
+
+/* =========================================
+   案内
+   ========================================= */
+
+.event-information {
+    padding: 70px 0;
+
+    background: var(--color-blue);
+}
+
+.information-box {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.information-box h2 {
+    margin: 0 0 8px;
+
+    font-size: 1.4rem;
+}
+
+.information-box p:not(.section-label) {
+    margin: 0;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================
+   レスポンシブ
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .next-event-card {
+        grid-template-columns: 1fr;
+    }
+
+    .next-event-visual {
+        min-height: 230px;
+    }
+
+    .visual-day {
+        font-size: 4.5rem;
+    }
+
+    .next-event-content {
+        padding: 30px;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .information-box {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .event-header {
+        padding: 60px 0 50px;
+    }
+
+    .next-event,
+    .upcoming-events {
+        padding: 60px 0;
+    }
+
+    .event-details {
+        display: block;
+    }
+
+    .event-details div {
+        width: 100%;
+        min-width: 0;
+
+        padding: 10px 0;
+
+        border-right: none;
+        border-bottom: 1px solid var(--color-light-purple);
+    }
+
+    .event-details div:last-child {
+        border-bottom: none;
+    }
+
+    .event-card {
+        grid-template-columns: 85px 1fr;
+    }
+
+    .event-card-date strong {
+        font-size: 2.2rem;
+    }
+
+    .event-card-body {
+        padding: 20px;
+    }
+
+    .past-event {
+        grid-template-columns: 90px 1fr 20px;
+    }
+
+    .past-event-name {
+        display: block;
+    }
+
+    .past-event-name span {
+        display: block;
+        margin-top: 2px;
+    }
+}

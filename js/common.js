@@ -27,6 +27,22 @@ function addFooter() {
 		}
 	});
 }
-
+function alterNoImage() {
+	let targets = document.getElementsByTagName("img");
+	for (let i = 0; i < targets.length; ++i) {
+		let targetImage = targets[i];
+		targetImage.onerror = () => {
+			console.log("onerror called");
+			targetImage.onerror = null;
+			loadText("/website/Components/AlterImage.html").then(result =>
+				targetImage.outerHTML = result
+			);
+		}
+		if (targetImage.id == "noimage") {
+			targetImage.onerror.call();
+		}
+	};
+}
 addHeader();
 addFooter();
+alterNoImage();

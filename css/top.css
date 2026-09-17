@@ -9,16 +9,20 @@
 
 .hero {
     border-bottom: 1px solid var(--light);
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 65px 24px 0;
 }
 
 .hero-inner {
 
     min-height: 520px;
 
-    margin: 0 auto;
     padding: 60px 24px;
     gap: 50px;
-    align-items: center;
+	
+    display: center;
 }
 
 .hero-text {
@@ -52,17 +56,9 @@
     margin-top: 28px;
 }
 
-.hero-image {
-    min-height: 400px;
-
-    background: var(--blue);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 14px;
-    font-weight: 700;
+.hero-image{
+	width: 100%;
+	align-self: center;
 }
 
 
@@ -380,9 +376,6 @@
         font-size: 38px;
     }
 
-    .hero-image {
-        min-height: 280px;
-    }
 
     .news-item {
         grid-template-columns: 90px 65px 1fr;
